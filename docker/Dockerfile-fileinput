@@ -1,0 +1,9 @@
+FROM node:latest
+
+#ADD log.io-file-input /home/node/.log.io/inputs/file.json
+
+RUN npm install -g log.io-file-input
+
+USER node
+
+ENTRYPOINT ["log.io-file-input"]

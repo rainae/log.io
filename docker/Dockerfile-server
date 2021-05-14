@@ -1,0 +1,11 @@
+FROM node:latest
+
+#ADD server.json /home/node/.log.io/server.json
+
+RUN npm install -g log.io
+
+EXPOSE 6688/tcp
+
+USER node
+
+ENTRYPOINT ["log.io-server"]
