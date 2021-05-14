@@ -1,6 +1,6 @@
 {
         "messageServer": {
-                "host": "logio-server",
+                "host": "localhost",
                 "port": 6689
         },
         "inputs": [
@@ -8,7 +8,7 @@
                         "source": "openhab",
                         "stream": "openhab",
                         "config": {
-                                "path": "/mnt/**/*.log*",
+                                "path": "/mnt/logs/*.log*",
                                 "watcherOptions": {
                                         "depth": 99
                                 }
